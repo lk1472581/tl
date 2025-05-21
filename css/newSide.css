@@ -1,0 +1,20 @@
+.news_slide{width: 49px;height: 631px;position: absolute;top: 125px;right: 104px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_bg.png) no-repeat 50% 0/11px auto;z-index: 5;}
+.connect{height: 422px;padding-top: 45px;}
+.connect a{width: 37px;height: 36px;display: block;margin: 0 auto;position: relative;}
+
+.connect a:nth-child(1){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon1.png) no-repeat 50% 0/100%;margin-bottom: 16px;}
+.connect a:nth-child(2){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon2.png) no-repeat 50% 0/100%;margin-bottom: 20px;}
+.connect a:nth-child(3){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon3.png) no-repeat 50% 0/100%;margin-bottom: 22px;}
+.connect a:nth-child(4){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon4.png) no-repeat 50% 0/100%;margin-bottom: 15px;}
+.connect a:nth-child(5){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon5.png) no-repeat 50% 0/100%;margin-bottom: 20px;}
+.connect a:nth-child(6){background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_icon6.png) no-repeat 50% 0/100%;}
+.btn_xszn{width: 49px;height: 50px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_xs.png) no-repeat 50% 0/100%;margin-bottom: 13px;display: block;}
+.btn_phb{width: 49px;height: 50px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_ph.png) no-repeat 50% 0/100%;margin-bottom: 11px;display: block;}
+.btn_ftmd{width: 49px;height: 90px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_wg.png) no-repeat 50% 0/100%;display: block;margin-bottom: 11px;}
+.btn_cfk{width: 49px;height: 69px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/link_cfk.png) no-repeat 50% 0/100%;display: block;}
+.news_slide a{opacity: .5;transition: .3s;}
+.news_slide a:hover{opacity: 1;}
+
+.wx_pop{width: 364px;height: 184px;background: url(//i0.cy.com/tlhj/main/2025/0408/images/page1/ewm_bg.png) no-repeat 50% 0/100%;position: absolute;top: -88px;left: -388px;padding: 36px;opacity: 0;transform: translateX(20px);transition: .3s;pointer-events: none;}
+.wx_pop img{width: 111px;height: auto;}
+.news_slide .side_wx:hover .wx_pop{opacity: 1;transform: translateX(0);}

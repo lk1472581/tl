@@ -1,0 +1,81 @@
+.pop-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+  display: none;
+}
+.pop-mask.show {
+  display: block;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  display: none;
+}
+.popup.show {
+  display: block;
+}
+.popup .close {
+  position: absolute;
+  transition: all 0.5s ease;
+  background: url(//i0.cy.com/tlhj/main/2025/0408/images/sp.png) no-repeat 0 -69px;
+	width: 110px;
+	height: 111px;
+	bottom: -130px;
+	left: 50%;
+	margin-left: -55px;
+	 
+}
+.popup .close:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+.popup.video-pop,
+.popup.video-pop-sohu{
+  width: 1196px;
+  height: 671px;
+  background-color: #000;
+  transform: translate(-50%, -55%);
+}
+.popup.video-pop .video-box,
+.popup.video-pop-sohu .video-box{
+  position: relative;
+  background-color: #000;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+}
+.popup.video-pop .video-box::after,
+.popup.video-pop-sohu .video-box::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 1210px;
+  height: 685px;
+  background: url(//i0.cy.com/tlhj/main/2025/0408/images/page4/video_border.png) no-repeat 50% 0/100%;
+  pointer-events: none;
+}
+.popup.video-pop video,
+.popup.video-pop-sohu video{
+  /* width: 100%; */
+  /* display: inline-block; */
+  height: 100%;
+  box-sizing: border-box;
+}
+@keyframes rotaC {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

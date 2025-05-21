@@ -1,0 +1,147 @@
+.nav-menu {
+  position: fixed;
+  z-index: 10;
+  height: 93px;
+  width: 1920px;
+  top: 55px;
+  left: 50%;
+  margin-left: -960px;
+  background: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+  transition: .1s;
+  transform-origin: 50% 0;
+}
+.nav-menu.on{
+	top: 0px;
+}
+.nav-menu.show{
+	height: 250px;
+}
+.nav-menu .top_logo {
+  width: 112px;
+  height: 79px;
+  background: url(//i0.cy.com/tlhj/main/2025/0408/images/logo.png) no-repeat 50% 0/100% ;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -660px;
+  z-index: 5;
+}
+.nav-menu > .center {
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.nav-menu > .center > ul {
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+.nav-menu > .center > ul li {
+  position: relative;
+  float: left;
+  width: 185px;
+  font-size: 22px;
+  font-family: 'title';
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu > .center > ul li:after{
+	content: '';
+    width: 178px;
+    height: 123px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    background: url(//i0.cy.com/tlhj/main/2025/0408/images/page5/nav_hz_on.png) no-repeat 50% 0 / 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s;
+}
+.nav-menu > .center > ul li span{
+	font-size: 10px;
+	opacity: .2;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+.nav-menu > .center > ul li:hover,
+.nav-menu > .center > ul li.act {
+  color: #f1dba1;
+
+}
+.nav-menu > .center > ul li:hover:after,
+.nav-menu > .center > ul li.act:after{
+	opacity: 1;
+}
+.nav-menu > .center > ul li::before {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 5px;
+  height: 29px;
+  background: url(https://i0.cy.com/tlhj/pic/2020/09/08/icon-1.png) no-repeat;
+  content: '';
+}
+.nav-menu > .center > ul li::before {
+  left: -2px;
+}
+.nav-menu > .center > ul li:first-child::before {
+  display: none;
+}
+.nav-menu .more-menu-info {
+  position: absolute;
+  top: 82px;
+  left: 50%;
+  margin-left: -960px;
+  z-index: 1;
+  width: 1920px;
+  height: 175px;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav-menu .more-menu-info.show {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-menu .more-menu-info .select-menu ul{
+	display: flex;
+  justify-content: center;
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+.nav-menu .more-menu-info li {
+  float: left;
+  width: 185px;
+}
+.nav-menu .more-menu-info li a {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 28px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.nav-menu .more-menu-info li a span{position: absolute;left: -88px;top: -55px;padding: 6px; z-index: 999;box-sizing: border-box;background: #fff;display: none;}
+.more-menu-info li a:hover span {display: block;}
+.nav-menu .more-menu-info li a span::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  right: -20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;}
+
+
+.nav-menu .more-menu-info li a:hover {
+  color: #f1dba1;
+}
